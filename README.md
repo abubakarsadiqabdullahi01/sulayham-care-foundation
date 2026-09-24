@@ -1,7 +1,7 @@
-# Sulayham Care Foundation — landing page
+# Sulayham Care Foundation
 
-A production-ready marketing site for SCAF, built from the organisational
-profile document. Next.js 14 (App Router), TypeScript, Tailwind CSS.
+The organisation's website, built from the SCAF organisational profile
+document. Next.js 14 (App Router), TypeScript, Tailwind CSS.
 
 ---
 
@@ -96,8 +96,9 @@ src/
   data/                   org · indicators · lgas · map
   lib/cn.ts
 public/
-  scaf-logo.jpeg          your mark
-  scaf-organogram.png     the original chart, offered as a download
+  scaf-mark.png           the mark, cut out of the logo for use on any ground
+  scaf-logo.jpeg          the full logo incl. wordmark — social cards only
+  scaf-organogram.png     the original chart, kept as the source document
 ```
 
 ---
@@ -132,8 +133,8 @@ two clearly distinct faces rather than one family doing both jobs.
 
 **Motion is spent in one place.** The hero's three arcs sweep in at 120° apart,
 echoing the rotational gesture of the SCAF mark. Everything after that is either
-a quiet scroll reveal or motion you triggered yourself: hovering an LGA, opening
-a unit in the organogram, filtering by senatorial district.
+a quiet scroll reveal or motion you triggered yourself: hovering an LGA or
+filtering by senatorial district.
 
 `Reveal` deliberately does not use a stock `whileInView` helper. It checks the
 element's position synchronously on mount and keeps scroll and resize

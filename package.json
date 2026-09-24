@@ -1,8 +1,8 @@
 {
-  "name": "scaf-landing",
+  "name": "sulayham-care-foundation",
   "version": "1.0.0",
   "private": true,
-  "description": "Sulayham Care Foundation (SCAF) — organisational landing page",
+  "description": "Sulayham Care Foundation (SCAF) — organisational website",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
