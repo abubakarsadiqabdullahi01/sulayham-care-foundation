@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --shell-x: clamp(1.25rem, 5vw, 4.5rem);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display font-semibold;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Numbers line up in stat rails, tables and charts. */
+  .tnum {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+  }
+
+  :focus-visible {
+    outline: 3px solid #ee8022;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background: #1e9e4a;
+    color: #fff;
+  }
+}
+
+@layer components {
+  .shell {
+    width: 100%;
+    max-width: 82rem;
+    margin-inline: auto;
+    padding-inline: var(--shell-x);
+  }
+
+  /* Section heading rail: a thin vertical rule carrying the section's colour,
+     so the colour encodes which strand of the work the section belongs to. */
+  .rail {
+    @apply relative pl-5;
+  }
+  .rail::before {
+    content: "";
+    @apply absolute left-0 top-1 h-[calc(100%-0.5rem)] w-[3px] rounded-full;
+    background: currentColor;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-[0.95rem] font-semibold transition-colors duration-200;
+  }
+  .btn-primary {
+    @apply btn bg-sun text-ink hover:bg-[#f39344];
+  }
+  .btn-ghost {
+    @apply btn border border-white/25 text-paper hover:border-white/60 hover:bg-white/5;
+  }
+  .btn-ink {
+    @apply btn bg-ink text-paper hover:bg-ink-700;
+  }
+
+  .card {
+    @apply rounded-card border border-ink/10 bg-white;
+  }
+
+  .field {
+    @apply w-full rounded-xl border border-ink/15 bg-white px-4 py-3 text-[0.95rem] text-ink placeholder:text-stone-light focus:border-ink/40 focus:outline-none;
+  }
+}
+
+/* Contour texture behind the hero: an abstraction of the Adamawa relief, from
+   the Mandara hills in the north down to the Benue valley. */
+.contours {
+  background-image: repeating-radial-gradient(
+    ellipse 120% 70% at 78% 18%,
+    rgba(255, 255, 255, 0.055) 0 1px,
+    transparent 1px 46px
+  );
+}
+
+.grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 3px 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

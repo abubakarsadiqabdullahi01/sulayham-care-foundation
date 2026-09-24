@@ -1,0 +1,10 @@
+# Store text with LF in the repository and check it out with LF, so the tree is
+# identical on Windows and on Vercel's Linux builders.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.woff binary
+*.woff2 binary
