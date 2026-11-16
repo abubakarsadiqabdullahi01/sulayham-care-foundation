@@ -9,6 +9,7 @@ import { ORG } from "@/data/org";
 const NAV = [
   { href: "#about", label: "About" },
   { href: "#work", label: "Our work" },
+  { href: "#field", label: "In the field" },
   { href: "#context", label: "The need" },
   { href: "#coverage", label: "Where we work" },
   { href: "#structure", label: "Structure" },

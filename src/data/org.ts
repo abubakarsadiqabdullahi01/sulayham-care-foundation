@@ -173,3 +173,36 @@ export const CONTACTS: ContactPerson[] = [
     phones: ["+234 803 233 1408", "+234 703 558 7511"],
   },
 ];
+
+/**
+ * Field activity shown under the governance thematic area. Add further entries
+ * by copying the shape — the section renders whatever is in `photos`.
+ */
+export const FIELD_WORK = {
+  area: "Good governance",
+  title: "Community sensitisation on PVC collection",
+  partner: "Dawis Initiative for Sustainability Community Development (DISCOD)",
+  blurb:
+    "Governance work starts with the card that makes a vote possible. SCAF and DISCOD took the Permanent Voter Card campaign into community squares — sitting with elders, ward heads and young people to explain what the PVC entitles them to, and to make the case for a peaceful, credible election free of vote buying and intimidation.",
+  message: "Your PVC, your voice, your future — Katin zabenka, muryarka, makomarka!",
+  photos: [
+    {
+      src: "/field/pvc-campaign-banner.jpg",
+      width: 1280,
+      height: 960,
+      alt: "Two SCAF and DISCOD field officers in branded vests standing beside a campaign banner reading Community Sensitization on PVC Collection, with colleagues seated behind them.",
+    },
+    {
+      src: "/field/pvc-community-briefing.jpg",
+      width: 1280,
+      height: 720,
+      alt: "A SCAF officer in a high-visibility vest addressing a seated gathering of men in a community compound, with the foundation's banner behind him.",
+    },
+    {
+      src: "/field/pvc-community-elders.jpg",
+      width: 1280,
+      height: 960,
+      alt: "Community elders seated on mats under a thatched shelter listening to the session, beside a SCAF banner listing the foundation's aims, vision and mission.",
+    },
+  ],
+};

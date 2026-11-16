@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { VisionMission } from "@/components/VisionMission";
 import { ThematicAreas } from "@/components/ThematicAreas";
+import { FieldWork } from "@/components/FieldWork";
 import { ContextData } from "@/components/ContextData";
 import { CoverageMap } from "@/components/CoverageMap";
 import { Organogram } from "@/components/Organogram";
@@ -18,6 +19,7 @@ export default function HomePage() {
         <About />
         <VisionMission />
         <ThematicAreas />
+        <FieldWork />
         <ContextData />
         <CoverageMap />
         <Organogram />
