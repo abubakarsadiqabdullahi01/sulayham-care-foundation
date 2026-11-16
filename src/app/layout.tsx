@@ -17,7 +17,7 @@ const body = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sulayhamcarefoundation.org"),
+  metadataBase: new URL("https://sulayhamcarefoundation.org.ng"),
   title: {
     default: "Sulayham Care Foundation — Together for better lives",
     template: "%s · Sulayham Care Foundation",
