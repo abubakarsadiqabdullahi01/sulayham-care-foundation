@@ -213,8 +213,8 @@ export const FIELD_WORK = {
  * a blank or half-filled account for someone to pay into.
  */
 export const DONATION = {
-  bank: "",
-  accountName: "",
-  accountNumber: "",
+  bank: "Fidelity Bank",
+  accountName: "Sulayham Care Foundation",
+  accountNumber: "5601455577",
   note: "Donations go to SCAF's corporate account, held under the foundation's Corporate Affairs Commission registration. For transfers from outside Nigeria, or to discuss a restricted grant, call the office and ask for the Executive Director.",
 };
