@@ -7,6 +7,7 @@ import { FieldWork } from "@/components/FieldWork";
 import { ContextData } from "@/components/ContextData";
 import { CoverageMap } from "@/components/CoverageMap";
 import { Organogram } from "@/components/Organogram";
+import { Donate } from "@/components/Donate";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
@@ -23,6 +24,7 @@ export default function HomePage() {
         <ContextData />
         <CoverageMap />
         <Organogram />
+        <Donate />
         <Contact />
       </main>
       <Footer />

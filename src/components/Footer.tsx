@@ -9,6 +9,7 @@ const LINKS = [
   { href: "#context", label: "The need" },
   { href: "#coverage", label: "Where we work" },
   { href: "#structure", label: "Structure" },
+  { href: "#donate", label: "Donate" },
   { href: "#contact", label: "Contact" },
 ];
 

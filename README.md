@@ -55,9 +55,10 @@ Open `src/data/lgas.ts` and change the `coverage` value on any LGA:
 - `"none"` — not yet reached (grey)
 
 The map, the legend, the filter chips and the "SCAF currently implements in N of
-21 LGAs" sentence all read from this one field. **Four LGAs are marked active as
-a placeholder — correct these before the site goes live**, because the page
-should never claim presence the organisation does not have.
+21 LGAs" sentence all read from this one field. The four active LGAs were
+confirmed with the programmes team in November 2026; re-check them whenever
+coverage changes, because the page should never claim presence the organisation
+does not have.
 
 Everything else in that file (headquarters, senatorial district, ward counts,
 coordinates) is reference data and should not need changing.

@@ -206,3 +206,15 @@ export const FIELD_WORK = {
     },
   ],
 };
+
+/**
+ * Donation account. The section hides the account panel while `accountNumber`
+ * is empty and points people at the office instead, so the page can never show
+ * a blank or half-filled account for someone to pay into.
+ */
+export const DONATION = {
+  bank: "",
+  accountName: "",
+  accountNumber: "",
+  note: "Donations go to SCAF's corporate account, held under the foundation's Corporate Affairs Commission registration. For transfers from outside Nigeria, or to discuss a restricted grant, call the office and ask for the Executive Director.",
+};
